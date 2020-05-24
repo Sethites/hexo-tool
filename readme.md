@@ -1,6 +1,7 @@
 # hexo tool
 
-- Thank you for download my hexo-tool.
+![](https://raw.githubusercontent.com/Sethites/Image/master/hexo.gif)
+  ## Thank you for download my hexo-tool.
 
 ## Install dependencies
 
