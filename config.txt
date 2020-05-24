@@ -1,0 +1,14 @@
+C:\Users\EI\AppData\Local\Programs\Microsoft VS Code\code.exe
+C:\Users\EI\Documents\code\now\newBlog\blog\source\_posts
+C:\Users\EI\Documents\code\now\newBlog\blog
+
+
+
+
+The first line is the location of the code.exe（use everything[1] to search）
+The second line is the location of the posts folder.
+The third line is the location of the hexo project.
+
+[1]:The Everything utility program is a free and open-source desktop search utility for Windows
+ that allows modification and commercial redistribution, which was developed by David Carpe
+nter and first released in 2009. The .exe extension on the file name implies an executable file.

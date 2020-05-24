@@ -1,0 +1,159 @@
+<html>
+
+<head>
+    <title>hexo tool</title>
+    <HTA:APPLICATION APPLICATIONNAME="hexo tool" ID="MyHTMLapplication" VERSION="1.0" ICON="Icons/icon.ico" />
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=9">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/grids-responsive-min.css">
+    <link rel="stylesheet" href="./css/pure-min.css" crossorigin="anonymous">
+    <style>
+        * {
+            text-align: center;
+        }
+
+        footer {
+            margin-top: 100px;
+        }
+
+        .pure-u-1-2 {
+            padding-top: 10px;
+        }
+
+        button{
+            margin-top: 10px;
+        }
+        
+        .button-success,
+        .button-error,
+        .button-warning,
+        .button-secondary {
+            color: white;
+            border-radius: 4px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .button-success {
+            background: rgb(28, 184, 65);
+            /* this is a green */
+        }
+
+        .button-error {
+            background: rgb(202, 60, 60);
+            /* this is a maroon */
+        }
+
+        .button-warning {
+            background: rgb(223, 117, 20);
+            /* this is an orange */
+        }
+
+        .button-secondary {
+            background: rgb(66, 184, 221);
+            /* this is a light blue */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pure-g">
+        <div class="pure-u-1-1">
+            <h1>hexo tool</h1>
+        </div>
+    </div>
+    <div class="pure-g">
+        <div class="pure-u-1-2">
+            <button class="pure-button pure-button-primary" id="button" onclick="start()">start</button>
+        </div>
+        <div class="pure-u-1-2">
+            <p>start vscode.</p>
+        </div>
+    </div>
+    <br>
+    <div class="pure-g">
+        <div class="pure-u-1-2 parent">
+            <div class="son">
+                <button class="pure-button pure-button-primary id=" button" onclick="newHexo()">new</button>
+            </div>
+        </div>
+        <div class="pure-u-1-2">
+            <p> new hexo.</p>
+        </div>
+    </div>
+    <br>
+    <div class="pure-g">
+        <div class="pure-u-1-2">
+            <button class="pure-button pure-button-primary id=" button" onclick="hexo()">deploy</button>
+        </div>
+        <div class="pure-u-1-2">
+            <p>deploy hexo.</p>
+        </div>
+    </div>
+    <br>
+    <div class="pure-g">
+        <div class="pure-u-1-2">
+            <button class="pure-button pure-button-primary id=" button" onclick="clean()">clean</button>
+        </div>
+        <div class="pure-u-1-2">
+            <p>clean hexo.</p>
+        </div>
+    </div>
+    <br>
+    <footer>
+        <div class="pure-g">
+            <div class="pure-u-1-2">
+                <p>Read README.MD before using it.</p>
+            </div>
+            <div class="pure-u-1-2">
+                <button class="pure-button pure-button-primary id=" button" onclick="readMe()">readme</button>
+            </div>
+        </div>
+        <div class="pure-g">
+            <div class="pure-u-1-2">
+                <p>Please configure the file address before use.</p>
+            </div>
+            <div class="pure-u-1-2">
+                <button class="button-error pure-button" id="button" onclick="setPath()">path</button>
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript">
+        window.resizeTo(500, 1000);
+        window.moveTo(1400,40)
+    </script>
+    <script>
+        function start() {
+            var shell = new ActiveXObject("WScript.Shell");
+            var path = 'newstart.bat';
+            shell.run(path, 1, false);
+        }
+        function hexo() {
+            var shell = new ActiveXObject("WScript.Shell");
+            var path = 'git.bat';
+            shell.run(path, 1, false);
+        }
+        function readMe() {
+            var shell = new ActiveXObject("WScript.Shell");
+            shell.run('notepad.exe readme.md')
+        }
+        function setPath() {
+            var shell = new ActiveXObject("WScript.Shell");
+            shell.run('notepad.exe config.txt')
+        }
+        function newHexo() {
+            var shell = new ActiveXObject("WScript.Shell");
+            var path = 'newhexo.bat';
+            shell.run(path, 1, false);
+        }
+        function clean() {
+            var shell = new ActiveXObject("WScript.Shell");
+            var path = 'clean.bat';
+            shell.run(path, 1, false);
+        }
+    </script>
+</body>
+
+</html>
