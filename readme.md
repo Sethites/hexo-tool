@@ -1,6 +1,6 @@
 # hexo tool
 
-![](https://raw.githubusercontent.com/Sethites/Image/master/hexo.gif)
+![](https://raw.githubusercontent.com/Sethites/Image/master/hexoTool.png)
 
 ## install
 
